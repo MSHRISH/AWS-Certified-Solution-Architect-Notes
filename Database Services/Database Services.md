@@ -1,0 +1,4 @@
+* RDS
+* DynamoDB
+* Redshift
+* ElastiCache
