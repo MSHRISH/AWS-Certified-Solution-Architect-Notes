@@ -27,6 +27,9 @@
 	* for web identities such as Facebook, Google or Amazon it supports OpenID Connect (OIDC)
 	* for internal identities such as AD or LDAP, IAM supports integration via Security Assertion Markup Language 2.0 (SAML)
 	* federation works by returning a temporary token associated with a role to the IdP
+#### Permission Boundary
+* A permissions boundary can be used to control the maximum permissions employees can grant to the IAM principals (that is, users and roles) that they create and manage.
+* 
 #### Authentication
 * User name/password- mostly for human interactions
 * access keys- combination of access key ID (20 charcters) and access secret key (40 charcters). Used to make API calls to access the AWS

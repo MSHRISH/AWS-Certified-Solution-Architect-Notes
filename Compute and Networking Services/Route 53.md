@@ -26,6 +26,7 @@
 #### Zone files
 * simple text file that contains mappings between domain names and IP addresses
 * resides inside name servers
+* contains DNS records
 #### Domain Name Registrars
 * ensure all the domain names are unique
 * an org or a commercial entity
@@ -40,19 +41,29 @@
 * AAAA record map to a IPv6 host
 #### Canonical Name (CNAME)
 * alias for the CNAME of the server
+* points towards other host
+* only works for non-root domain name
 #### Mail Exchange (MX)
 * define mail servers
+
 #### Pointer (PTR)
 * reverse of A record
 * maps an IP to DNS name
+#### Text(TXT)
+* hold text information
+* associate arbitary and unformatted text with a host
 #### Route 53 Overview
 * domain registration
 * DNS Service
 * Health checking the resources
+#### Hosted Zones
+* resource records sets that are managed together under a single domain name
+* two types: private and public
+* public hosted zone for routing traffic to web
+* private hosted zone for routing traffic within VPCs
 #### Routing Policy
 * Simple
-* Weighted
-* Latency-based
-* Failover
+* Weighted (weight of a resource record/sum of weights for the resource record sets)
+* Latency-based (lowest latency)
+* Failover (can't be created for private hosted zones)
 * Geolocation
-

@@ -61,6 +61,10 @@
 * logical grouping of EC2s in a single AZ
 * enables low latency and high throughput communication
 * to utilise fully use enhanced networking and 10Gbps network
+	* Cluster-low-latency group in a single AZ
+	* spread- spreads instances across underlying hardware (max 7 instances per AZ)
+	* partition- spreads instances across many diff partitions-7 partitions per AZ-100s of EC2 instances in a partition-each partition is separated physically
+	* 
 #### Instance Store
 * temp block storage for instances
 * including within EC2 cost
